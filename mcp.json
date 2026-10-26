@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ethmumbai-intent-solver-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Arbitrum / Ethereum L2",
+        "PROJECT_TICKER": "EMSOLVE"
+      },
+      "tools": [
+        {
+          "name": "verify_emsolve_invariants",
+          "description": "Verifies deterministic invariants for ETHMumbai Intent Solver AI on Arbitrum / Ethereum L2."
+        },
+        {
+          "name": "execute_emsolve_action",
+          "description": "Executes authenticated AI state transition."
+        }
+      ]
+    }
+  }
+}
